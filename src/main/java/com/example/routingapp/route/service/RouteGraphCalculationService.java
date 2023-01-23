@@ -31,6 +31,7 @@ public class RouteGraphCalculationService {
     }
 
     private List<String> getCountriesInRoute(final RouteGraph routeGraph, final String originCountryCode, final String destinationCountryCode) {
+        // this map is used to avoid visiting the same vertices several times and then trace vertices paths to build final route
         final Map<String, String> visitedCountriesTrace = new HashMap<>();
         final Queue<String> countriesToVisit = new LinkedList<>();
 
