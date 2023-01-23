@@ -1,0 +1,11 @@
+cache:
+  properties:
+    default:
+      expires-after: 5
+      time-unit: MINUTES
+    country:
+      expires-after: 1
+      time-unit: DAYS
+    route:
+      expires-after: 1
+      time-unit: DAYS
